@@ -1,0 +1,53 @@
+body {
+  background: #00d2ff;
+  background: -webkit-linear-gradient(to bottom, #00d2ff , #3a7bd5);
+  background: linear-gradient(to bottom, #00d2ff , #3a7bd5);
+        
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+#instruction{
+  color: white;
+  font-family: 'Lucida Sans', Arial, sans-serif;
+  font-size: 5vw;
+  text-align: center;
+  margin-top: 25%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+  cursor: default;							  
+}
+
+.bubble {
+  background-color:white;
+  opacity: 0.6;
+  position: absolute;
+  width:100px;
+  height:100px;
+  border-radius:50px;
+  box-shadow: 0 0 20px white;
+}
+.b1 {
+    -webkit-animation: animateBubble 25s linear infinite, struggle 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes animateBubble {
+    0% {
+        top: 100vh;
+    }
+    100% {
+        top: -100%;
+    }
+}
+@-webkit-keyframes struggle { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}

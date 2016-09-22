@@ -1,0 +1,351 @@
+body { 
+    /*font: .875em/1.618 Helvetica, Sans-serif; */
+    /*font-family: 'Nunito', sans-serif;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    height: 500px;
+    margin: 0 auto;
+}
+div.clear
+{
+  clear: both;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*already have hover need to add navigation bat*/
+.mylogo {
+   display: block;
+   position: absolute;
+   width: 5vw;
+   height:5vw;
+   left:4vw; 
+   top: 5vh;
+   background-size: 5vw 5vw;
+   background-image: url('../img/logo.png');
+   background-repeat: no-repeat;
+}
+
+.mylogo:hover {
+   background-image: url('../img/logo1.png');
+   background-repeat: no-repeat;
+}
+
+/*My Name Aimee*/
+.MyName {
+  width: 98vw;
+  height: 50vh;
+  position: relative;
+  top: 14%;
+}
+
+#name {
+  margin:auto;
+  overflow: hidden;
+  position: relative;
+  height: 40vh;
+  width: 80vw;
+}
+
+#name-txt {
+  position: absolute;
+  font-size: 34vmin;
+  top:37%;
+}
+
+
+
+article#MyIntro{
+  padding-bottom: 10px;
+  height: 98vh;
+}
+.scaleCap, .scaleCap p{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top:0px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;   
+}
+.content {
+  font-family: 'Century Gothic Light', sans-serif;
+  position: absolute;
+  left: 48vw;
+  top:80vh;
+  transform: translate(-50%, -50%);
+  font-size: 1.8vw;
+  line-height: 40px;
+  color: #7d7d7d;
+  height: 40px;
+  overflow:hidden;
+  font-weight:600;
+}
+
+.content p {
+  display:inline;
+  margin:0;
+}
+
+.content ul {
+  margin-top:0;
+  text-align:left;
+  list-style:none;
+  float:left;
+  padding-right:20px;
+  animation:6s linear 0s normal none infinite change;
+}
+
+.content ul li {
+  line-height:40px;
+  padding-bottom: 10px;
+  margin:0;
+}
+
+@keyframes opacity {
+  0%, 100%   {opacity:0;}
+  50%  {opacity:1;}
+}
+
+@keyframes change {
+  0%, 13%, 100%   {transform:translateY(0);}
+  17%,29%  {transform:translateY(-20%);}
+  34%,46%  {transform:translateY(-40%);}
+  51%,63%  {transform:translateY(-60%);}
+  68%,80%  {transform:translateY(-80%);}
+  85%,97%  {transform:translateY(-100%);}
+}
+#MyProject
+{
+  height:98vh;
+  margin: 0;
+  z-index: -100px;
+}
+#MyWork{
+  height: auto;
+}
+#AllWork{
+  background-color: white;
+  padding-top:2%;
+}
+#WorkList
+{
+    width: 100%;
+    border: 1px solid;
+    height: auto;
+}
+#map {
+        width: 100%;
+        height: 400px;
+}
+/*For My Team*/
+#MyTeam{
+  height: 50vw;
+}
+.teamBox{
+  width: 90vw;
+  margin: auto;
+  height:35vw;
+}
+.meContact{
+  width: 35vw;
+  margin-left: 1%;
+  height: auto;
+  float: left;
+}
+.mainPic{
+  width: 20vw;
+  margin-top:5%;
+  margin-right:20%;
+  margin-bottom:0%;
+  margin-left:20%;
+  height: auto;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+ font-family: 'Poppins', sans-serif;
+ font-family: 'Libre Baskerville', serif;
+}
+.mainPic img{
+ border-bottom: 3px solid;
+}
+
+.socialPic
+{
+  margin-left:20%;
+}
+.socialPic img{
+  width: 3vw;
+  padding: 10px;
+}
+.socialPicM img{
+  width: 1vw;
+  padding: 10px;
+}
+.meContact p{
+  width: 20vw;
+  margin-right:20%;
+  margin-bottom:0%;
+  margin-left:20%;
+  height: auto;
+  text-align: center;
+  float: left;
+}
+.teamIntro{
+  margin-top:10px;
+  text-align: center;
+  color: grey;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1vw;
+}
+.teamMember
+{
+  width: 49vw;
+  margin:2% 0%;
+  margin-left: 3%;
+  height: auto;
+  float: left;
+}
+.teamContact{
+  border-bottom:3px solid black; 
+}
+.teamContact img{
+
+  width: 8vw;
+  padding-bottom: 1%;
+  padding-right: 2%;
+}
+.workIMG{
+  position: relative;
+  z-index:100px;
+  width:26vw;
+  height: 38vw;
+  margin: 5vw 0vw 0vw 3.5vw;
+  float: left;
+  min-height: 38vw;
+}
+.caseHeading
+{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  border-bottom: 1px solid #d3d3d3;
+  margin:2vw 2vw 0vw 2vw;
+  font-size: 3vw;
+}
+.caseSub
+{
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  margin:0vw 2vw;
+  background-color: #d7d7d7;
+  color: white;
+  font-size: 2vw;
+}
+.caseIntro
+{
+  margin: 1vw 2vw;
+  text-align: center;
+  font-size: 1.2vw;
+  color: #636363;
+}
+.casePar
+{
+  font-family: 'Raleway', sans-serif;
+  /*overflow: hidden;*/
+  height: 15vw;
+  margin: 0px auto;
+  position: relative;
+}
+p.pIntro
+{
+  color: gray;
+  font-size: 1vw;
+}
+.caseLine2
+{
+  width: 90%;
+  margin: 0vw 0vw 0vw 2vw;
+  /*border-bottom:1px solid black;*/
+}
+.caseTBC
+{
+  float:right;
+  font-size: 0.4vw;
+  margin: 1vw 2vw 0vw 0vw;
+}
+
+/*Stroke*/
+.tri-down {
+/* Styling block element, not required */
+  position: relative;
+  padding: 2%;
+  padding-left:10%;
+  width: 50%;
+  /*border-bottom: 2px solid black;*/
+  background: white;
+  /*color: #848484;*/
+  /*border: 1px solid;*/
+  font-size: 500%;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* Required for Down Triangle */
+.tri-down:before,.tri-down:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: 0;
+}
+
+/* Stroke */
+.tri-down:before {
+  bottom: -20px;
+  left: 17vw;
+  border-top-color: black;
+  border-width: 20px;
+}
+#WordPicContainer {
+  width: 98vw;
+  height: auto;
+}
+#WorkPic {
+  -moz-column-count: 4;
+  -moz-column-gap: 2vw;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 2vw;
+  column-count: 4;
+  column-gap: 2vw;
+  width: 90vw;
+}
+
+.aboutMeContainer
+{
+  width: 49vw;
+  margin:5% 0% 0% 0%;
+  margin-left: 2%;
+  height: auto;
+  float: left;
+}
+.aboutMeContent p
+{
+  text-align: center;
+  color: black;
+  font-size: 2vw;
+}
+p.pIntro
+{
+  color: gray;
+  font-size: 1vw;
+}
+#footer{
+  background:black;
+  color:white;
+  font-size:70%;
+  padding:0.1%;
+  margin-top: 10%;
+}
