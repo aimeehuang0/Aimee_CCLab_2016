@@ -32,27 +32,47 @@ var loadBook = function(jsonResponse){
       return;
   }
   else{
+      $('.bookDesc').empty();
+      var book_title = jsonResponse.results[0].book_title;
+      var book_author = jsonResponse.results[0].book_author;
+       $('.bookDesc').append(
+          $('<div/>')
+            // .attr("id", "newDiv1")
+            .addClass("bookTitle")
+            .html(book_title)
+        );
+        $('.bookDesc').append(
+          $('<div/>')
+            // .attr("id", "newDiv1")
+            .addClass("bookAuthor")
+            .html("by "+book_author)
+        );
+
+
       for (var i = 0; i <jsonResponse.num_results ; i++) {
         // console.log(jsonResponse.results[i]);
         var reviewURL = jsonResponse.results[i].url;
         var reviewAuthor = jsonResponse.results[i].byline;
         var publication_dt = jsonResponse.results[i].publication_dt;
-        var book_title = jsonResponse.results[i].book_title;
-        var book_author = jsonResponse.results[i].book_author;
+        
         var summary = jsonResponse.results[i].summary;
-        // console.log(i + " " +reviewURL+ " "+reviewAuthor+" "+summary);
+
+        
+
         $('.bookDesc').append(
           $('<div/>')
             // .attr("id", "newDiv1")
             .addClass("bookReview")
-            .append("<div/>")
-            .html("Book Title:" + book_title + '<br>'+"Book Author: "+book_author + "<br> Publication Date: "+publication_dt + "<br> Publication Date: "+publication_dt + "<br> Review Author: "+reviewAuthor + "<br> Review Summary: "+summary + "<br> URL: "+reviewURL)
+            .append("<table/>")
+            .html("<tr><td> Review Author: </td><td>"+reviewAuthor + "</td><tr><td>Date:</td><td> "+publication_dt + "</td><tr><td>Review Summary: </td><td>"+summary + "</td><tr><td>URL: </td><td><a href="+reviewURL+">"+reviewURL+"</a></td></tr>")
         );
+      }     
+
   }  
 }
 
 var getBookReview = function(){
-  var myUrl = "http://api.nytimes.com/svc/books/v3/reviews.json?title=1q84" ;//+ BookName;
+  var myUrl = "http://api.nytimes.com/svc/books/v3/reviews.json?title="+ BookName;
   // console.log(myUrl);
 
   $.ajax({
@@ -67,6 +87,6 @@ var getBookReview = function(){
 
 
 $(document).ready(function() {
-  //init();
-  getBookReview();
+  init();
+  //getBookReview();
 });

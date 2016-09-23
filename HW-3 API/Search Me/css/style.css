@@ -14,34 +14,63 @@ body {
   margin: 0;
 }
 body {
-  background: #565656;
+  /*background: #C09F80;*/
   color: #FFFFFF;
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /*** STYLES ***/
+.header
+{
+    background-color: #565656;
+    text-align: center;
+}
 .title{
   color: #76323F;
   font-size: 10vw;
   font-family: Helvetica;
-  background-color: #565656;
   color: white;
-  text-align: center;
+}
+.bookTitle
+{
+  color:black;
+  font-family: Helvetica;
+  font-size: 6vw;
+}
+.bookAuthor
+{
+  color:black;
+  font-family: Helvetica;
+  font-size: 2vw;
+  color: grey;
+  padding: 1vw;
 }
 .bookDesc
 {
   position: absolute;
-  left: calc(50%-10vw);
+  /*left: 25%;*/
+  margin:2vw;
+  text-align: center;
 }
 .bookReview
 {
-  text-align: center;
-  background-color: #D7CEC7;
-
+  background: #76323F;
+  color: white;
+  margin: 0 auto; 
+  width:70%;
+  display: inline-block;
+  padding: 2vw;
+  margin-bottom: 1vw;
+  text-align: left;
 }
 .searchBox{
   display: table;
   width: 100%;
   height: 100%;
+  padding: 3vh 0vh;
 }
 .searchBox .searchCtrl {
   display: table-cell;
@@ -94,4 +123,11 @@ body {
   color: inherit;
   background: transparent;
   outline-width: 0px;
+}
+tr{
+  padding: 1vw;
+}
+td{
+  padding: 0.5vw 0;
+  min-width: 200px;
 }
