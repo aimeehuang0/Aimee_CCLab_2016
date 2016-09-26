@@ -85,7 +85,7 @@ var loadBook = function(jsonResponse){
             // .attr("id", "newDiv1")
             .addClass("bookReview")
             .append("<table/>")
-            .html("<tr><td> Review Author: </td><td>"+reviewAuthor + "</td><tr><td>Date:</td><td> "+publication_dt + "</td><tr><td>Review Summary: </td><td>"+summary + "</td><tr><td>URL: </td><td><a href="+reviewURL+">"+reviewURL+"</a></td></tr>")
+            .html("<tr><td> Review Author: </td><td>"+reviewAuthor + "</td><tr><td>Date:</td><td> "+publication_dt + "</td><tr><td>Review Summary: </td><td>"+summary + "</td><tr><td>URL: </td><td><a target=\"_blank\" href="+reviewURL+">"+reviewURL+"</a></td></tr>")
         );
       }     
 
@@ -103,6 +103,12 @@ var loadArticle = function(jsonResponse){
         var book_title = jsonResponse.response.docs[i].headline.main;
         console.log(book_title);
         var reviewURL = jsonResponse.response.docs[i].web_url;
+        try {
+            var reviewAuthor =  jsonResponse.response.docs[i].byline.original;
+        }
+        catch(err) {
+            var reviewAuthor =  '';
+        }
         var reviewAuthor =  jsonResponse.response.docs[i].byline.original;
         var summary =  jsonResponse.response.docs[i].abstract;
         var publication_dt =  jsonResponse.response.docs[i].pub_date;
@@ -116,7 +122,7 @@ var loadArticle = function(jsonResponse){
             // .attr("id", "newDiv1")
             .addClass("bookReview")
             .append("<table/>")
-            .html("<tr><td>Article Title: </td><td>"+book_title+"</td><tr><td></td><td>"+reviewAuthor + "</td><tr><td>Date:</td><td> "+publication_dt + "</td><tr><td>Abstract: </td><td>"+summary + "</td><tr><td>URL: </td><td><a href="+reviewURL+">"+reviewURL+"</a></td></tr>")
+            .html("<tr><td>Article Title: </td><td>"+book_title+"</td><tr><td></td><td>"+reviewAuthor + "</td><tr><td>Date:</td><td> "+publication_dt + "</td><tr><td>Abstract: </td><td>"+summary + "</td><tr><td>URL: </td><td><a target=\"_blank\" href="+reviewURL+">"+reviewURL+"</a></td></tr>")
         );
       }     
 
