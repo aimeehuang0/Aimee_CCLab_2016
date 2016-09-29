@@ -3,7 +3,7 @@
 
 Push the button to light the LED.
 
-	Added some blink effect while the button state is UP.
+	Added some blink effect when the button state is UP.
 
 
 <br>
