@@ -56,19 +56,19 @@ void loop() {
   lastButtonState = buttonState;
 
   // turns on LED
-  // digitalWrite(ledPin, up);
+   digitalWrite(ledPin, up);
 
   // add blink
-  if(up)
-  {
-    digitalWrite(ledPin, HIGH);
-    delay(50);
-  }
-  digitalWrite(ledPin, LOW);
-  delay(50);
-  else{
-    digitalWrite(ledPin, LOW);
-  }
+//   if(up)
+//   {
+//     digitalWrite(ledPin, HIGH);
+//     delay(50);
+//   }
+//   digitalWrite(ledPin, LOW);
+//   delay(50);
+//   else{
+//     digitalWrite(ledPin, LOW);
+//   }
 }
 
 
