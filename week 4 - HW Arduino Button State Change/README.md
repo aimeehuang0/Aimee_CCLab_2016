@@ -9,4 +9,4 @@ Push the button to light the LED.
 <br>
 *Code modifed from Arduino Sample Code:StateChangeDetection*
 
-**CHeckout How it works: [Arduino Button State Change](https://github.com/aimeehuang0/CCLab/tree/master/HW-3%20API/Search%20Me)**
+**CHeckout How it works: [Arduino Button State Change](https://youtu.be/DNtxC9ILzSc)**
