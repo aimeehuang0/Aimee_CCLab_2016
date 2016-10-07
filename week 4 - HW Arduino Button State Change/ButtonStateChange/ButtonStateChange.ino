@@ -1,4 +1,4 @@
-/*
+ ///*
  State change detection (edge detection)
   
  The circuit:
@@ -66,16 +66,9 @@ void loop() {
   }
   digitalWrite(ledPin, LOW);
   delay(50);
-  else{
-    digitalWrite(ledPin, LOW);
-  }
+//  else{
+//    digitalWrite(ledPin, LOW);
+//  }
 }
-
-
-
-
-
-
-
 
 
