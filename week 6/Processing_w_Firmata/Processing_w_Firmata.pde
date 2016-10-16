@@ -75,17 +75,26 @@ void draw() {
     //+21
 }
 
+//import processing.serial.*;
+//import cc.arduino.*;
+
+//Arduino arduino;
+
 //boolean LEDlight = false;
 
 //void setup() {
 //  size(400, 300);
 //  arduino = new Arduino(this, Arduino.list()[0], 57600);
 //}
+//void draw(){
+//}
 //void mousePressed()
 //{
+//    println(LEDlight);
 //    if(LEDlight)
 //      arduino.digitalWrite(13, Arduino.HIGH) ;
 //    else
 //      arduino.digitalWrite(13, Arduino.LOW) ;  
+      
 //    LEDlight=!LEDlight;
 //}
