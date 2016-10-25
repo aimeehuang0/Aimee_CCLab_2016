@@ -14,4 +14,4 @@ The untouchable box is intended for people who have self-awareness of being dist
 **Tools:**
 Arduino + Processing(p5.js) + p5.serialport
 
-**Checkout! [Link to Untouchable Box](https://www.youtube.com/watch?v=R9v4fDQD3I8)**
+**Checkout! [Link to Untouchable Box](https://youtu.be/Vb4wTQwCSUg)**
