@@ -12,4 +12,4 @@ Bubble will disapper when clicked.
 ****
 <br>
 
-**Checkout! [BubbleMe](https://aimeehuang0.github.io/Projects/Bubble%20Me/)**
+**Checkout! [BubbleMe](http://aimemee.com/Projects/BubbleMe/index.html)**
