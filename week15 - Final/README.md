@@ -7,6 +7,7 @@ The REMINDER app wants to remind people that nature predates cities to let peopl
 Unity (Assets, Particle System)
 Vuforia
 
-**Description:**
 
-**Checkout! [Link to Reminder](https://youtu.be/DOx-Ruok6lQ)**
+**Checkout!**
+**[Link to Reminder w/o voice over](https://youtu.be/Yim-q3-5NAo)**
+**[Link to Reminder w/ voice over](https://youtu.be/WI4ML89JDwM)**
