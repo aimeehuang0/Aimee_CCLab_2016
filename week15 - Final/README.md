@@ -8,6 +8,6 @@ Unity (Assets, Particle System)
 Vuforia
 
 
-**Checkout!**
-**[Link to Reminder w/o voice over](https://youtu.be/Yim-q3-5NAo)**
+**Checkout!** <br>
+**[Link to Reminder w/o voice over](https://youtu.be/Yim-q3-5NAo)**<br>
 **[Link to Reminder w/ voice over](https://youtu.be/WI4ML89JDwM)**
